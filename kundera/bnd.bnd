@@ -1,0 +1,19 @@
+Bundle-Version: 2.16.0.${tstamp}
+Bundle-Name: kundera
+Bundle-Description: The idea behind Kundera is to make working with NoSQL Databases drop-dead \
+	simple and fun. Kundera is being developed with following objectives: \
+    * To make working with NoSQL as simple as working with SQL \
+    * To serve as JPA Compliant mapping solution for NoSQL Datastores. \
+    * To help developers, forget the complexity of NoSQL stores and focus on Domain Model. \
+    * To make switching across data-stores as easy as changing a configuration.
+    
+Bundle-Category: jpa, polygot, driver
+
+Include-Resource: @jar/kundera-core-2.16.jar,\
+	@jar/kundera-cassandra-2.16.jar,\
+	@jar/kundera-cassandra-ds-driver-2.16.jar,\
+	@jar/kundera-cassandra-pelops-2.16.jar,\
+	@jar/kundera-mongo-2.16.jar,\
+	@jar/kundera-rdbms-2.16.jar,\
+	OSGI-OPTS/=@jar/Kundera-kundera-2.16.zip
+-runee: JavaSE-1.8
